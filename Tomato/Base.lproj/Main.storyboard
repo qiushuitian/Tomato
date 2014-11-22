@@ -7,10 +7,10 @@
         <!--WorkViewController-->
         <scene sceneID="d70-PL-SGi">
             <objects>
-                <viewController id="7Ls-xc-hlp" userLabel="WorkViewController" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="overCurrentContext" id="7Ls-xc-hlp" userLabel="WorkViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="8St-Uc-xIy"/>
-                        <viewControllerLayoutGuide type="bottom" id="XIA-ev-TIp"/>
+                        <viewControllerLayoutGuide type="top" id="N9t-eB-CQh"/>
+                        <viewControllerLayoutGuide type="bottom" id="5fj-2h-d6a"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="ckg-bS-0fs">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
@@ -21,15 +21,15 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aWk-o2-1Is" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="375" y="78"/>
+            <point key="canvasLocation" x="375" y="90"/>
         </scene>
         <!--SettingViewController-->
         <scene sceneID="sH2-fS-7lh">
             <objects>
                 <viewController id="rjz-zm-MRR" userLabel="SettingViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="5oD-D2-wdg"/>
-                        <viewControllerLayoutGuide type="bottom" id="xjf-4L-Exi"/>
+                        <viewControllerLayoutGuide type="top" id="Gz3-xi-i7W"/>
+                        <viewControllerLayoutGuide type="bottom" id="obY-zg-Rmh"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="GSE-RT-pb8">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
@@ -40,32 +40,47 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PII-yF-TcK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="994" y="78"/>
+            <point key="canvasLocation" x="1088" y="90"/>
         </scene>
         <!--PlanViewController-->
         <scene sceneID="aln-JD-nsf">
             <objects>
-                <viewController id="zjt-6I-eHW" userLabel="PlanViewController" sceneMemberID="viewController">
+                <viewController id="zjt-6I-eHW" userLabel="PlanViewController" customClass="PlanViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Rs8-xf-zF4"/>
-                        <viewControllerLayoutGuide type="bottom" id="UJj-2k-yBZ"/>
+                        <viewControllerLayoutGuide type="top" id="iTN-Ly-0SE"/>
+                        <viewControllerLayoutGuide type="bottom" id="wg1-9P-EJ0"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="ggw-sB-87P">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="PlanViewController" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gJX-Zt-AF1">
+                                <rect key="frame" x="204" y="157" width="145" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="计划" id="GXa-VA-ZeW"/>
+                    <splitViewDetailSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <segue destination="Ywu-wL-OfU" kind="custom" identifier="beginPlan" customClass="PushNoAnimationSegue" id="w5u-6I-uJb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hU6-DK-gKu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-340" y="78"/>
+            <point key="canvasLocation" x="-346" y="90"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="JGv-EA-84h">
             <objects>
                 <tabBarController id="FOw-Gk-5XU" sceneMemberID="viewController">
                     <nil key="simulatedBottomBarMetrics"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="600" height="600"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="4JB-uG-JTj">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -79,21 +94,21 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8vh-SU-wQR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="375" y="-679"/>
+            <point key="canvasLocation" x="375" y="-678.99999999999989"/>
         </scene>
         <!--PlanBeginViewController-->
         <scene sceneID="RFS-QH-1sx">
             <objects>
                 <viewController id="Ywu-wL-OfU" userLabel="PlanBeginViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="YqK-u5-NQR"/>
-                        <viewControllerLayoutGuide type="bottom" id="Qin-18-jDO"/>
+                        <viewControllerLayoutGuide type="top" id="hRP-AU-p5V"/>
+                        <viewControllerLayoutGuide type="bottom" id="lyM-Bh-ckO"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Jla-Cp-jU0">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="准备要做什么" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EWC-5s-oFf">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="准备要做什么" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EWC-5s-oFf">
                                 <rect key="frame" x="230" y="88" width="163" height="23"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -133,14 +148,15 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bk8-4o-BKn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-346" y="866.99999999999989"/>
         </scene>
         <!--PlanStepViewController-->
         <scene sceneID="xhw-eY-5M0">
             <objects>
                 <viewController id="ovH-FZ-u2x" userLabel="PlanStepViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="iDI-u2-aVm"/>
-                        <viewControllerLayoutGuide type="bottom" id="P6C-AU-EV3"/>
+                        <viewControllerLayoutGuide type="top" id="sz5-rz-Kg3"/>
+                        <viewControllerLayoutGuide type="bottom" id="y90-Tk-cVe"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="fC8-6n-m5w">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
@@ -236,6 +252,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kMh-1r-fqT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-346" y="1602.9999999999998"/>
         </scene>
         <!--PlanFinishTableViewController-->
         <scene sceneID="Jc2-Yt-Fkp">
@@ -261,7 +278,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a12-E8-y4w" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-383" y="-1948"/>
+            <point key="canvasLocation" x="-346" y="2372"/>
         </scene>
     </scenes>
 </document>

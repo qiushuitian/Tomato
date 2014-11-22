@@ -15,6 +15,8 @@
 		B6E845D71A203F4F008D509D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6E845D61A203F4F008D509D /* Images.xcassets */; };
 		B6E845DA1A203F4F008D509D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6E845D81A203F4F008D509D /* LaunchScreen.xib */; };
 		B6E845E61A203F4F008D509D /* TomatoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E845E51A203F4F008D509D /* TomatoTests.m */; };
+		B6E845F11A205488008D509D /* PlanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E845F01A205488008D509D /* PlanViewController.m */; };
+		B6E845F41A205D4B008D509D /* PushNoAnimationSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E845F31A205D4B008D509D /* PushNoAnimationSegue.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +44,10 @@
 		B6E845DF1A203F4F008D509D /* TomatoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TomatoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6E845E41A203F4F008D509D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B6E845E51A203F4F008D509D /* TomatoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TomatoTests.m; sourceTree = "<group>"; };
+		B6E845EF1A205488008D509D /* PlanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlanViewController.h; sourceTree = "<group>"; };
+		B6E845F01A205488008D509D /* PlanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlanViewController.m; sourceTree = "<group>"; };
+		B6E845F21A205D4B008D509D /* PushNoAnimationSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PushNoAnimationSegue.h; sourceTree = "<group>"; };
+		B6E845F31A205D4B008D509D /* PushNoAnimationSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PushNoAnimationSegue.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,11 +93,15 @@
 				B6E845CB1A203F4F008D509D /* AppDelegate.m */,
 				B6E845D01A203F4F008D509D /* ViewController.h */,
 				B6E845D11A203F4F008D509D /* ViewController.m */,
+				B6E845EF1A205488008D509D /* PlanViewController.h */,
+				B6E845F01A205488008D509D /* PlanViewController.m */,
 				B6E845D31A203F4F008D509D /* Main.storyboard */,
 				B6E845D61A203F4F008D509D /* Images.xcassets */,
 				B6E845D81A203F4F008D509D /* LaunchScreen.xib */,
 				B6E845CD1A203F4F008D509D /* Tomato.xcdatamodeld */,
 				B6E845C61A203F4F008D509D /* Supporting Files */,
+				B6E845F21A205D4B008D509D /* PushNoAnimationSegue.h */,
+				B6E845F31A205D4B008D509D /* PushNoAnimationSegue.m */,
 			);
 			path = Tomato;
 			sourceTree = "<group>";
@@ -225,7 +235,9 @@
 				B6E845CF1A203F4F008D509D /* Tomato.xcdatamodeld in Sources */,
 				B6E845CC1A203F4F008D509D /* AppDelegate.m in Sources */,
 				B6E845D21A203F4F008D509D /* ViewController.m in Sources */,
+				B6E845F11A205488008D509D /* PlanViewController.m in Sources */,
 				B6E845C91A203F4F008D509D /* main.m in Sources */,
+				B6E845F41A205D4B008D509D /* PushNoAnimationSegue.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -418,6 +430,7 @@
 				B6E845EB1A203F4F008D509D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B6E845EC1A203F4F008D509D /* Build configuration list for PBXNativeTarget "TomatoTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +439,7 @@
 				B6E845EE1A203F4F008D509D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
