@@ -17,6 +17,7 @@
 		B6E845E61A203F4F008D509D /* TomatoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E845E51A203F4F008D509D /* TomatoTests.m */; };
 		B6E845F11A205488008D509D /* PlanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E845F01A205488008D509D /* PlanViewController.m */; };
 		B6E845F41A205D4B008D509D /* PushNoAnimationSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E845F31A205D4B008D509D /* PushNoAnimationSegue.m */; };
+		B6E845F71A20723D008D509D /* PlanBeginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E845F61A20723D008D509D /* PlanBeginViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,8 @@
 		B6E845F01A205488008D509D /* PlanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlanViewController.m; sourceTree = "<group>"; };
 		B6E845F21A205D4B008D509D /* PushNoAnimationSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PushNoAnimationSegue.h; sourceTree = "<group>"; };
 		B6E845F31A205D4B008D509D /* PushNoAnimationSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PushNoAnimationSegue.m; sourceTree = "<group>"; };
+		B6E845F51A20723D008D509D /* PlanBeginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlanBeginViewController.h; sourceTree = "<group>"; };
+		B6E845F61A20723D008D509D /* PlanBeginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlanBeginViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,19 +92,21 @@
 		B6E845C51A203F4F008D509D /* Tomato */ = {
 			isa = PBXGroup;
 			children = (
+				B6E845D31A203F4F008D509D /* Main.storyboard */,
+				B6E845D61A203F4F008D509D /* Images.xcassets */,
+				B6E845D81A203F4F008D509D /* LaunchScreen.xib */,
+				B6E845CD1A203F4F008D509D /* Tomato.xcdatamodeld */,
+				B6E845C61A203F4F008D509D /* Supporting Files */,
 				B6E845CA1A203F4F008D509D /* AppDelegate.h */,
 				B6E845CB1A203F4F008D509D /* AppDelegate.m */,
 				B6E845D01A203F4F008D509D /* ViewController.h */,
 				B6E845D11A203F4F008D509D /* ViewController.m */,
 				B6E845EF1A205488008D509D /* PlanViewController.h */,
 				B6E845F01A205488008D509D /* PlanViewController.m */,
-				B6E845D31A203F4F008D509D /* Main.storyboard */,
-				B6E845D61A203F4F008D509D /* Images.xcassets */,
-				B6E845D81A203F4F008D509D /* LaunchScreen.xib */,
-				B6E845CD1A203F4F008D509D /* Tomato.xcdatamodeld */,
-				B6E845C61A203F4F008D509D /* Supporting Files */,
 				B6E845F21A205D4B008D509D /* PushNoAnimationSegue.h */,
 				B6E845F31A205D4B008D509D /* PushNoAnimationSegue.m */,
+				B6E845F51A20723D008D509D /* PlanBeginViewController.h */,
+				B6E845F61A20723D008D509D /* PlanBeginViewController.m */,
 			);
 			path = Tomato;
 			sourceTree = "<group>";
@@ -236,6 +241,7 @@
 				B6E845CC1A203F4F008D509D /* AppDelegate.m in Sources */,
 				B6E845D21A203F4F008D509D /* ViewController.m in Sources */,
 				B6E845F11A205488008D509D /* PlanViewController.m in Sources */,
+				B6E845F71A20723D008D509D /* PlanBeginViewController.m in Sources */,
 				B6E845C91A203F4F008D509D /* main.m in Sources */,
 				B6E845F41A205D4B008D509D /* PushNoAnimationSegue.m in Sources */,
 			);
