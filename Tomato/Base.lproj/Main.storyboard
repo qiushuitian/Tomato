@@ -42,10 +42,10 @@
             </objects>
             <point key="canvasLocation" x="1088" y="90"/>
         </scene>
-        <!--PlanViewController-->
+        <!--PlanFlowContainerViewController-->
         <scene sceneID="aln-JD-nsf">
             <objects>
-                <viewController id="zjt-6I-eHW" userLabel="PlanViewController" customClass="PlanViewController" sceneMemberID="viewController">
+                <viewController id="zjt-6I-eHW" userLabel="PlanFlowContainerViewController" customClass="PlanFlowContainerViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="iTN-Ly-0SE"/>
                         <viewControllerLayoutGuide type="bottom" id="wg1-9P-EJ0"/>
