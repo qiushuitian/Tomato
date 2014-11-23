@@ -14,5 +14,13 @@
     UIViewController * sourceVC = self.sourceViewController;
     UIViewController * destVC = self.destinationViewController;
     [sourceVC presentViewController:destVC  animated:NO completion:nil];
+//    [sourceVC addChildViewController:destVC];
+//    [sourceVC transitionFromViewController:sourceVC
+//                          toViewController:destVC
+//                                  duration:0
+//                                   options:UIViewAnimationOptionTransitionFlipFromLeft
+//                                animations:nil
+//                                completion:nil];
+    
 }
 @end

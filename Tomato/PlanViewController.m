@@ -28,7 +28,7 @@
 
 - (void)viewWillAppear:(BOOL)animated{
 //    
-    CGRect viewRect = self.view.frame;
+//   CGRect viewRect = self.view.frame;
 //    CGRect tabbarRect = self.tabBarController.tabBar.frame;
 //    CGRect newRect = CGRectMake(viewRect.origin.x,
 //                                viewRect.origin.y,
