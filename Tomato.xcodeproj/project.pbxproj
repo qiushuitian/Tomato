@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B662589F1A2192EF0030748C /* PlanFlowContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B662589E1A2192EF0030748C /* PlanFlowContainerViewController.m */; };
+		B66258A21A2194860030748C /* StackContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B66258A11A2194860030748C /* StackContainerViewController.m */; };
 		B6E845C91A203F4F008D509D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E845C81A203F4F008D509D /* main.m */; };
 		B6E845CC1A203F4F008D509D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E845CB1A203F4F008D509D /* AppDelegate.m */; };
 		B6E845CF1A203F4F008D509D /* Tomato.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B6E845CD1A203F4F008D509D /* Tomato.xcdatamodeld */; };
@@ -33,6 +34,8 @@
 /* Begin PBXFileReference section */
 		B662589D1A2192EF0030748C /* PlanFlowContainerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlanFlowContainerViewController.h; sourceTree = "<group>"; };
 		B662589E1A2192EF0030748C /* PlanFlowContainerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlanFlowContainerViewController.m; sourceTree = "<group>"; };
+		B66258A01A2194860030748C /* StackContainerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StackContainerViewController.h; sourceTree = "<group>"; };
+		B66258A11A2194860030748C /* StackContainerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StackContainerViewController.m; sourceTree = "<group>"; };
 		B6E845C31A203F4F008D509D /* Tomato.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tomato.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6E845C71A203F4F008D509D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B6E845C81A203F4F008D509D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -98,6 +101,8 @@
 				B6E845CD1A203F4F008D509D /* Tomato.xcdatamodeld */,
 				B6E845C61A203F4F008D509D /* Supporting Files */,
 				B6E845CA1A203F4F008D509D /* AppDelegate.h */,
+				B66258A01A2194860030748C /* StackContainerViewController.h */,
+				B66258A11A2194860030748C /* StackContainerViewController.m */,
 				B662589D1A2192EF0030748C /* PlanFlowContainerViewController.h */,
 				B662589E1A2192EF0030748C /* PlanFlowContainerViewController.m */,
 				B6E845CB1A203F4F008D509D /* AppDelegate.m */,
@@ -238,6 +243,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B6E845CF1A203F4F008D509D /* Tomato.xcdatamodeld in Sources */,
+				B66258A21A2194860030748C /* StackContainerViewController.m in Sources */,
 				B6E845CC1A203F4F008D509D /* AppDelegate.m in Sources */,
 				B6E845D21A203F4F008D509D /* ViewController.m in Sources */,
 				B662589F1A2192EF0030748C /* PlanFlowContainerViewController.m in Sources */,

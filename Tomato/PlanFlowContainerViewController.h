@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface PlanFlowContainerViewController : UIViewController
+#import "StackContainerViewController.h"
+
+@interface PlanFlowContainerViewController : StackContainerViewController
 
 @end
