@@ -10,6 +10,8 @@
 #import "DataCenter.h"
 #import "TaskTableViewCell.h"
 #import "Task.h"
+#import "UITableView+FDTemplateLayoutCell.h"
+
 
 @interface TaskTableViewController ()
 
@@ -28,7 +30,8 @@
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-    
+
+    [self.tableView registerClass:[TaskTableViewCell class] forCellReuseIdentifier:@"taskTableViewCell"];
     
     NSFetchRequest *request = [[NSFetchRequest alloc] init];
     NSEntityDescription *entity = [NSEntityDescription entityForName:@"Task" inManagedObjectContext:[DataCenter instance].managedObjectContext];
@@ -72,10 +75,14 @@
     return 1;
 }
 
-//-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
-//{
-//    return 78;
-//}
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+//    CGFloat h = 107;
+    CGFloat h = [tableView fd_heightForCellWithIdentifier:@"taskTableViewCell" configuration:^(id cell) {
+        [self loadCellData:cell indexPath:indexPath];
+    }];
+    return h;
+}
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     static NSString * cellIdentifier = @"taskTableViewCell";
@@ -85,17 +92,21 @@
         cell = [[TaskTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
     }
     
+    
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
+    [self loadCellData:cell indexPath:indexPath];
+    return cell;
+}
+
+-(void)loadCellData:(TaskTableViewCell *)cell indexPath:(NSIndexPath *)indexPath{
     Task * task = [self.tasks objectAtIndex:indexPath.row];
     
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
     [dateFormatter setDateFormat:@"yyyy-MM-dd"];
     cell.createTimeLabel.text = [dateFormatter stringFromDate:task.createTime];
     cell.contentLabel.text = task.content;
-    cell.selectionStyle = UITableViewCellSelectionStyleNone;
-    
-    return cell;
-}
 
+}
 
 
 @end
