@@ -1,18 +1,19 @@
 //
-//  PlanFlowContainerViewController.m
+//  PlanViewController.m
 //  Tomato
 //
-//  Created by qiushuitian on 23/11/14.
-//  Copyright (c) 2014 dengjian. All rights reserved.
+//  Created by qiushuitian on 4/6/15.
+//  Copyright (c) 2015 dengjian. All rights reserved.
 //
 
-#import "PlanFlowContainerViewController.h"
+#import "PlanViewController.h"
+#import "PlanTableViewController.h"
 
-@interface PlanFlowContainerViewController ()
+@interface PlanViewController ()
 
 @end
 
-@implementation PlanFlowContainerViewController
+@implementation PlanViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -24,11 +25,16 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (void)viewDidAppear:(BOOL)animated{
-    
+
+- (IBAction)clickShowPlanButton:(id)sender {
+    PlanTableViewController * pvc = [[PlanTableViewController alloc] init];
+    pvc.navigationItem.title = @"计划列表";
+    [self.navigationController pushViewController:pvc animated:YES];
 }
 
 
+- (IBAction)clickPlanAddButton:(id)sender {
+}
 
 /*
 #pragma mark - Navigation
