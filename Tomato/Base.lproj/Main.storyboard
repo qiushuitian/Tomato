@@ -46,25 +46,46 @@
         <!--PlanTableViewController-->
         <scene sceneID="6Jc-gF-eyg">
             <objects>
-                <tableViewController id="u4w-8S-YMk" userLabel="PlanTableViewController" sceneMemberID="viewController">
+                <tableViewController id="u4w-8S-YMk" userLabel="PlanTableViewController" customClass="PlanTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="SE4-oD-OFD">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Mfi-B3-kbB">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="planTableViewCell" rowHeight="78" id="Mfi-B3-kbB" customClass="PlanTableViewCell">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Mfi-B3-kbB" id="xhh-8P-uPV">
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="创建时间" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="orv-mt-G82">
+                                            <rect key="frame" x="129" y="8" width="68" height="21"/>
+                                            <color key="backgroundColor" red="0.98147837760000001" green="0.42093894510000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="内容" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FRi-oY-dnL">
+                                            <rect key="frame" x="160" y="37" width="34" height="21"/>
+                                            <color key="backgroundColor" red="0.80488478539999997" green="0.55761269229999999" blue="0.094196137309999997" alpha="1" colorSpace="calibratedRGB"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="contentLabel" destination="FRi-oY-dnL" id="Ru4-6I-ak2"/>
+                                    <outlet property="createTimeLabel" destination="orv-mt-G82" id="vVL-eO-a9y"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
+                        <sections/>
                         <connections>
-                            <outlet property="dataSource" destination="u4w-8S-YMk" id="haE-nM-icO"/>
-                            <outlet property="delegate" destination="u4w-8S-YMk" id="fX1-QM-lN9"/>
+                            <outlet property="dataSource" destination="u4w-8S-YMk" id="JDN-cv-0MV"/>
+                            <outlet property="delegate" destination="u4w-8S-YMk" id="LnT-LG-Kar"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="AMc-Id-7UQ"/>
+                    <navigationItem key="navigationItem" title="计划列表" id="AMc-Id-7UQ"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GnA-ys-L7o" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -167,7 +188,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="clickShowPlanButton:" destination="K8s-iv-Y84" eventType="touchUpInside" id="RZV-II-7ti"/>
+                                    <segue destination="u4w-8S-YMk" kind="show" id="OTT-zY-Cgz"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -177,6 +198,10 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="计划" id="Lze-C2-A1h"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="costTimeTextField" destination="Uq9-ID-1IF" id="rad-OF-8WC"/>
+                        <outlet property="taskTextField" destination="iTF-d2-BdQ" id="iBs-lx-EBl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ERQ-fZ-tW7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -248,31 +273,6 @@
                     <navigationItem key="navigationItem" id="pR2-VZ-Kq5"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OMy-UN-0Mg" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-        </scene>
-        <!--PlanTableViewController-->
-        <scene sceneID="9XD-zo-ZLH">
-            <objects>
-                <tableViewController title="计划列表" id="E9N-5X-sOI" userLabel="PlanTableViewController" customClass="PlanTableViewController" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="anE-kA-KQx">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="oT6-tb-wtM">
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="oT6-tb-wtM" id="nDK-ot-t6P">
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="E9N-5X-sOI" id="0xi-DM-mqc"/>
-                            <outlet property="delegate" destination="E9N-5X-sOI" id="8k0-Dc-Ybh"/>
-                        </connections>
-                    </tableView>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="oPv-my-cTO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
     </scenes>

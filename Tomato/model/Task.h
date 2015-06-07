@@ -2,7 +2,7 @@
 //  Task.h
 //  Tomato
 //
-//  Created by qiushuitian on 6/6/15.
+//  Created by qiushuitian on 7/6/15.
 //  Copyright (c) 2015 dengjian. All rights reserved.
 //
 
@@ -16,6 +16,7 @@
 @property (nonatomic, retain) NSString * content;
 @property (nonatomic, retain) NSDate * createTime;
 @property (nonatomic, retain) NSNumber * status;
+@property (nonatomic, retain) NSNumber * planCostTime;
 @property (nonatomic, retain) NSSet *subTasks;
 @end
 
