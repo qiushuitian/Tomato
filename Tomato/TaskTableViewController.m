@@ -72,10 +72,10 @@
     return 1;
 }
 
--(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    return 78;
-}
+//-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+//{
+//    return 78;
+//}
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     static NSString * cellIdentifier = @"taskTableViewCell";
@@ -88,7 +88,7 @@
     Task * task = [self.tasks objectAtIndex:indexPath.row];
     
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
-    [dateFormatter setDateFormat:@"dd-MM-yyyy"];
+    [dateFormatter setDateFormat:@"yyyy-MM-dd"];
     cell.createTimeLabel.text = [dateFormatter stringFromDate:task.createTime];
     cell.contentLabel.text = task.content;
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
