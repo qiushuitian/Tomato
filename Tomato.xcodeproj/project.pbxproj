@@ -12,6 +12,9 @@
 		B64D709D1B209DFD00DADDBC /* PlanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B64D709C1B209DFD00DADDBC /* PlanViewController.m */; };
 		B64D70A01B209ECE00DADDBC /* TaskTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B64D709F1B209ECE00DADDBC /* TaskTableViewController.m */; };
 		B64D70AA1B2411A700DADDBC /* DataCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = B64D70A91B2411A700DADDBC /* DataCenter.m */; };
+		B6AB98A81B2445230008467B /* CircleProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = B6AB98A51B2445230008467B /* CircleProgressView.m */; };
+		B6AB98A91B2445230008467B /* CircleShapeLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = B6AB98A71B2445230008467B /* CircleShapeLayer.m */; };
+		B6AB98AC1B24464F0008467B /* WorkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6AB98AB1B24464F0008467B /* WorkViewController.m */; };
 		B6E845C91A203F4F008D509D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E845C81A203F4F008D509D /* main.m */; };
 		B6E845CC1A203F4F008D509D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E845CB1A203F4F008D509D /* AppDelegate.m */; };
 		B6E845CF1A203F4F008D509D /* Tomato.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B6E845CD1A203F4F008D509D /* Tomato.xcdatamodeld */; };
@@ -42,6 +45,12 @@
 		B64D709F1B209ECE00DADDBC /* TaskTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaskTableViewController.m; sourceTree = "<group>"; };
 		B64D70A81B2411A700DADDBC /* DataCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataCenter.h; sourceTree = "<group>"; };
 		B64D70A91B2411A700DADDBC /* DataCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataCenter.m; sourceTree = "<group>"; };
+		B6AB98A41B2445230008467B /* CircleProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleProgressView.h; sourceTree = "<group>"; };
+		B6AB98A51B2445230008467B /* CircleProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleProgressView.m; sourceTree = "<group>"; };
+		B6AB98A61B2445230008467B /* CircleShapeLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleShapeLayer.h; sourceTree = "<group>"; };
+		B6AB98A71B2445230008467B /* CircleShapeLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleShapeLayer.m; sourceTree = "<group>"; };
+		B6AB98AA1B24464F0008467B /* WorkViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WorkViewController.h; sourceTree = "<group>"; };
+		B6AB98AB1B24464F0008467B /* WorkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WorkViewController.m; sourceTree = "<group>"; };
 		B6E845C31A203F4F008D509D /* Tomato.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tomato.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6E845C71A203F4F008D509D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B6E845C81A203F4F008D509D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -83,6 +92,17 @@
 			path = model;
 			sourceTree = "<group>";
 		};
+		B6AB98A31B2445230008467B /* CircularProgressView */ = {
+			isa = PBXGroup;
+			children = (
+				B6AB98A41B2445230008467B /* CircleProgressView.h */,
+				B6AB98A51B2445230008467B /* CircleProgressView.m */,
+				B6AB98A61B2445230008467B /* CircleShapeLayer.h */,
+				B6AB98A71B2445230008467B /* CircleShapeLayer.m */,
+			);
+			path = CircularProgressView;
+			sourceTree = "<group>";
+		};
 		B6E845BA1A203F4F008D509D = {
 			isa = PBXGroup;
 			children = (
@@ -104,6 +124,7 @@
 		B6E845C51A203F4F008D509D /* Tomato */ = {
 			isa = PBXGroup;
 			children = (
+				B6AB98A31B2445230008467B /* CircularProgressView */,
 				B64D70A41B22EE6B00DADDBC /* model */,
 				B6E845D31A203F4F008D509D /* Main.storyboard */,
 				B6E845D61A203F4F008D509D /* Images.xcassets */,
@@ -120,6 +141,8 @@
 				B64D70A91B2411A700DADDBC /* DataCenter.m */,
 				B613E8911B2418B7001CF494 /* TaskTableViewCell.h */,
 				B613E8921B2418B7001CF494 /* TaskTableViewCell.m */,
+				B6AB98AA1B24464F0008467B /* WorkViewController.h */,
+				B6AB98AB1B24464F0008467B /* WorkViewController.m */,
 			);
 			path = Tomato;
 			sourceTree = "<group>";
@@ -253,8 +276,11 @@
 				B613E8901B241389001CF494 /* Task.m in Sources */,
 				B6E845CF1A203F4F008D509D /* Tomato.xcdatamodeld in Sources */,
 				B64D709D1B209DFD00DADDBC /* PlanViewController.m in Sources */,
+				B6AB98A91B2445230008467B /* CircleShapeLayer.m in Sources */,
 				B64D70A01B209ECE00DADDBC /* TaskTableViewController.m in Sources */,
 				B613E8931B2418B7001CF494 /* TaskTableViewCell.m in Sources */,
+				B6AB98AC1B24464F0008467B /* WorkViewController.m in Sources */,
+				B6AB98A81B2445230008467B /* CircleProgressView.m in Sources */,
 				B6E845CC1A203F4F008D509D /* AppDelegate.m in Sources */,
 				B64D70AA1B2411A700DADDBC /* DataCenter.m in Sources */,
 				B6E845C91A203F4F008D509D /* main.m in Sources */,

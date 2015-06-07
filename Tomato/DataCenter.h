@@ -9,10 +9,16 @@
 #import <Foundation/Foundation.h>
 #import "AppDelegate.h"
 
+
 @interface DataCenter : NSObject
 
 +(instancetype)instance;
 
 -(NSManagedObjectContext *)managedObjectContext;
+
+//work session
+@property (strong, nonatomic) NSDate * workBeginTime;
+@property (nonatomic) BOOL isWorking;
+
 
 @end
