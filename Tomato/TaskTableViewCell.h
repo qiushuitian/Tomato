@@ -1,5 +1,5 @@
 //
-//  PlanTableViewCell.h
+//  TaskTableViewCell.h
 //  Tomato
 //
 //  Created by qiushuitian on 7/6/15.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface PlanTableViewCell : UITableViewCell
+@interface TaskTableViewCell : UITableViewCell
 @property (weak, nonatomic) IBOutlet UILabel *createTimeLabel;
 @property (weak, nonatomic) IBOutlet UILabel *contentLabel;
 

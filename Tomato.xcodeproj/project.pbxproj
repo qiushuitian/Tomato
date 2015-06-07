@@ -8,9 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		B613E8901B241389001CF494 /* Task.m in Sources */ = {isa = PBXBuildFile; fileRef = B613E88F1B241389001CF494 /* Task.m */; };
-		B613E8931B2418B7001CF494 /* PlanTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B613E8921B2418B7001CF494 /* PlanTableViewCell.m */; };
+		B613E8931B2418B7001CF494 /* TaskTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B613E8921B2418B7001CF494 /* TaskTableViewCell.m */; };
 		B64D709D1B209DFD00DADDBC /* PlanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B64D709C1B209DFD00DADDBC /* PlanViewController.m */; };
-		B64D70A01B209ECE00DADDBC /* PlanTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B64D709F1B209ECE00DADDBC /* PlanTableViewController.m */; };
+		B64D70A01B209ECE00DADDBC /* TaskTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B64D709F1B209ECE00DADDBC /* TaskTableViewController.m */; };
 		B64D70AA1B2411A700DADDBC /* DataCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = B64D70A91B2411A700DADDBC /* DataCenter.m */; };
 		B6E845C91A203F4F008D509D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E845C81A203F4F008D509D /* main.m */; };
 		B6E845CC1A203F4F008D509D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E845CB1A203F4F008D509D /* AppDelegate.m */; };
@@ -34,12 +34,12 @@
 /* Begin PBXFileReference section */
 		B613E88E1B241389001CF494 /* Task.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Task.h; sourceTree = "<group>"; };
 		B613E88F1B241389001CF494 /* Task.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Task.m; sourceTree = "<group>"; };
-		B613E8911B2418B7001CF494 /* PlanTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlanTableViewCell.h; sourceTree = "<group>"; };
-		B613E8921B2418B7001CF494 /* PlanTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlanTableViewCell.m; sourceTree = "<group>"; };
+		B613E8911B2418B7001CF494 /* TaskTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaskTableViewCell.h; sourceTree = "<group>"; };
+		B613E8921B2418B7001CF494 /* TaskTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaskTableViewCell.m; sourceTree = "<group>"; };
 		B64D709B1B209DFD00DADDBC /* PlanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlanViewController.h; sourceTree = "<group>"; };
 		B64D709C1B209DFD00DADDBC /* PlanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlanViewController.m; sourceTree = "<group>"; };
-		B64D709E1B209ECE00DADDBC /* PlanTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlanTableViewController.h; sourceTree = "<group>"; };
-		B64D709F1B209ECE00DADDBC /* PlanTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlanTableViewController.m; sourceTree = "<group>"; };
+		B64D709E1B209ECE00DADDBC /* TaskTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaskTableViewController.h; sourceTree = "<group>"; };
+		B64D709F1B209ECE00DADDBC /* TaskTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaskTableViewController.m; sourceTree = "<group>"; };
 		B64D70A81B2411A700DADDBC /* DataCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataCenter.h; sourceTree = "<group>"; };
 		B64D70A91B2411A700DADDBC /* DataCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataCenter.m; sourceTree = "<group>"; };
 		B6E845C31A203F4F008D509D /* Tomato.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tomato.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -114,12 +114,12 @@
 				B6E845CB1A203F4F008D509D /* AppDelegate.m */,
 				B64D709B1B209DFD00DADDBC /* PlanViewController.h */,
 				B64D709C1B209DFD00DADDBC /* PlanViewController.m */,
-				B64D709E1B209ECE00DADDBC /* PlanTableViewController.h */,
-				B64D709F1B209ECE00DADDBC /* PlanTableViewController.m */,
+				B64D709E1B209ECE00DADDBC /* TaskTableViewController.h */,
+				B64D709F1B209ECE00DADDBC /* TaskTableViewController.m */,
 				B64D70A81B2411A700DADDBC /* DataCenter.h */,
 				B64D70A91B2411A700DADDBC /* DataCenter.m */,
-				B613E8911B2418B7001CF494 /* PlanTableViewCell.h */,
-				B613E8921B2418B7001CF494 /* PlanTableViewCell.m */,
+				B613E8911B2418B7001CF494 /* TaskTableViewCell.h */,
+				B613E8921B2418B7001CF494 /* TaskTableViewCell.m */,
 			);
 			path = Tomato;
 			sourceTree = "<group>";
@@ -253,8 +253,8 @@
 				B613E8901B241389001CF494 /* Task.m in Sources */,
 				B6E845CF1A203F4F008D509D /* Tomato.xcdatamodeld in Sources */,
 				B64D709D1B209DFD00DADDBC /* PlanViewController.m in Sources */,
-				B64D70A01B209ECE00DADDBC /* PlanTableViewController.m in Sources */,
-				B613E8931B2418B7001CF494 /* PlanTableViewCell.m in Sources */,
+				B64D70A01B209ECE00DADDBC /* TaskTableViewController.m in Sources */,
+				B613E8931B2418B7001CF494 /* TaskTableViewCell.m in Sources */,
 				B6E845CC1A203F4F008D509D /* AppDelegate.m in Sources */,
 				B64D70AA1B2411A700DADDBC /* DataCenter.m in Sources */,
 				B6E845C91A203F4F008D509D /* main.m in Sources */,

@@ -1,18 +1,18 @@
 //
-//  PlanTableViewCell.m
+//  TaskTableViewCell.m
 //  Tomato
 //
 //  Created by qiushuitian on 7/6/15.
 //  Copyright (c) 2015 dengjian. All rights reserved.
 //
 
-#import "PlanTableViewCell.h"
+#import "TaskTableViewCell.h"
 
-@interface PlanTableViewCell ()
+@interface TaskTableViewCell ()
 
 @end
 
-@implementation PlanTableViewCell
+@implementation TaskTableViewCell
 
 - (void)awakeFromNib {
     // Initialization code

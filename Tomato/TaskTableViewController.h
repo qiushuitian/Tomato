@@ -1,5 +1,5 @@
 //
-//  PlanTableViewController.h
+//  TaskTableViewController.h
 //  Tomato
 //
 //  Created by qiushuitian on 4/6/15.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface PlanTableViewController : UITableViewController
+@interface TaskTableViewController : UITableViewController
 
 @end

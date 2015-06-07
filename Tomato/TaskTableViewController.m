@@ -1,23 +1,23 @@
 //
-//  PlanTableViewController.m
+//  TaskTableViewController.m
 //  Tomato
 //
 //  Created by qiushuitian on 4/6/15.
 //  Copyright (c) 2015 dengjian. All rights reserved.
 //
 
-#import "PlanTableViewController.h"
+#import "TaskTableViewController.h"
 #import "DataCenter.h"
-#import "PlanTableViewCell.h"
+#import "TaskTableViewCell.h"
 #import "Task.h"
 
-@interface PlanTableViewController ()
+@interface TaskTableViewController ()
 
 @property(nonatomic,strong) NSMutableArray * tasks;
 
 @end
 
-@implementation PlanTableViewController
+@implementation TaskTableViewController
 
 
 - (void)viewDidLoad {
@@ -78,11 +78,11 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    static NSString * cellIdentifier = @"planTableViewCell";
+    static NSString * cellIdentifier = @"taskTableViewCell";
 
-    PlanTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
+    TaskTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
     if (cell == nil) {
-        cell = [[PlanTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
+        cell = [[TaskTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
     }
     
     Task * task = [self.tasks objectAtIndex:indexPath.row];
