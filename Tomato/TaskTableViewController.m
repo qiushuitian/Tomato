@@ -31,8 +31,12 @@
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 
-    [self.tableView registerClass:[TaskTableViewCell class] forCellReuseIdentifier:@"taskTableViewCell"];
+//    [self.tableView registerClass:[TaskTableViewCell class] forCellReuseIdentifier:@"taskTableViewCell"];
+    [self loadTaskData];
     
+}
+
+-(void)loadTaskData{
     NSFetchRequest *request = [[NSFetchRequest alloc] init];
     NSEntityDescription *entity = [NSEntityDescription entityForName:@"Task" inManagedObjectContext:[DataCenter instance].managedObjectContext];
     [request setEntity:entity];
@@ -51,10 +55,12 @@
     }else{
         self.tasks = mutableFetchResults;
     }
+
 }
 
 -(void)viewWillAppear:(BOOL)animated
 {
+    [self loadTaskData];
     [self.tableView reloadData];//每次载入都重新下载数据
 }
 
@@ -77,7 +83,6 @@
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-//    CGFloat h = 107;
     CGFloat h = [tableView fd_heightForCellWithIdentifier:@"taskTableViewCell" configuration:^(id cell) {
         [self loadCellData:cell indexPath:indexPath];
     }];
@@ -100,9 +105,10 @@
 
 -(void)loadCellData:(TaskTableViewCell *)cell indexPath:(NSIndexPath *)indexPath{
     Task * task = [self.tasks objectAtIndex:indexPath.row];
-    
+    cell.contentLabel.preferredMaxLayoutWidth = self.tableView.bounds.size.width - 24;
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
     [dateFormatter setDateFormat:@"yyyy-MM-dd"];
+    cell.contentLabel.numberOfLines = 0;
     cell.createTimeLabel.text = [dateFormatter stringFromDate:task.createTime];
     cell.contentLabel.text = task.content;
 
