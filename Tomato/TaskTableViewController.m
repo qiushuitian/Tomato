@@ -114,5 +114,27 @@
 
 }
 
+- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath{
+    return YES;
+}
+
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    Task * task = [self.tasks objectAtIndex:indexPath.row];
+    [[DataCenter instance].managedObjectContext deleteObject:task];
+    [[DataCenter instance] saveContext];
+    
+    [self.tasks removeObjectAtIndex:indexPath.row];
+    
+    
+    [tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:[NSIndexPath indexPathForRow:indexPath.row inSection:indexPath.section]] withRowAnimation:UITableViewRowAnimationTop];
+
+}
+
+- (UITableViewCellEditingStyle)tableView:(UITableView *)tableView editingStyleForRowAtIndexPath:(NSIndexPath *)indexPath{
+
+    return UITableViewCellEditingStyleDelete;
+}
+
 
 @end

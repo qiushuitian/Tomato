@@ -15,6 +15,7 @@
 +(instancetype)instance;
 
 -(NSManagedObjectContext *)managedObjectContext;
+-(void)saveContext;
 
 //work session
 @property (strong, nonatomic) NSDate * workBeginTime;

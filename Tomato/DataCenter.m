@@ -23,5 +23,10 @@
     return delegate.managedObjectContext;
 }
 
+- (void)saveContext{
+    AppDelegate * delegate = [UIApplication sharedApplication].delegate;
+    return [delegate saveContext];
+}
+
 
 @end
